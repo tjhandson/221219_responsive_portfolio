@@ -101,12 +101,13 @@ header {
 }
 
 /* Work Section Containers*/
-
+/* creaating Flex columns */
 .page-container {
   display: flex;
   flex-direction: column;
 }
 
+/* spacing for each section */
 .page-section {
   display: flex;
   flex-flow: space-around;
@@ -114,6 +115,7 @@ header {
   margin: 10px;
 }
 
+/* Title of each section on in Column1 */
 .aside-title {
   width: 25%;
   padding-right: 10px;
@@ -122,25 +124,27 @@ header {
   color: var(--dark-blue);
 }
 
-.section-content {
-  width: 65%;
+/* Main section on column2 */
+.main_section {
+  width: 70%;
   padding-left: 10px;
   margin: 5px 5px;
 }
 
+/* removing hyperlink style from all a tags */
 .page-container a {
   text-decoration: none;
 
 }
 
 #about-me {
-  width: 60%;
+  width: 64%;
   margin: 5px;
 }
 
 /* Work Section Containers*/
 
-#work .section-content {
+#work .main_section {
   display: flex;
   flex-flow: space-between;
   flex-wrap: wrap;
@@ -149,7 +153,7 @@ header {
 
 .main-project {
   width: 91%;
-  max-width: 1610px;
+  max-width: 2010px;
   height: 300px;
   margin: 5px;
 }
@@ -162,7 +166,7 @@ header {
 
 .sub-project {
   width: 45%;
-  max-width: 800px;
+  max-width: 1000px;
   height: 300px;
   margin: 5px;
 }
