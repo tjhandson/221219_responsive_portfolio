@@ -72,3 +72,30 @@ header {
 .topnav a:hover {
   color: var(--blue)
 }
+
+/* Header Banner */
+.bannerimage {
+  height: 300px;
+  width: 100%;
+  margin-top: -20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/AdobeStock_292172238.jpeg");
+  /* Image by By tippapatt Free stock image @: https://stock.adobe.com/uk/search/free?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bfree_collection%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&k=computer&search_type=usertyped&acp=&aco=computer&get_facets=1&asset_id=292172238*/
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.bannerimage-title {
+
+  margin-right: 10px;
+  padding: 15px 20px;
+  color: var(--white);
+  background-color: var(--red-transparent);
+  padding: 2px;
+  position: relative;
+  margin-bottom: 10px;
+  height: 40px;
+}
