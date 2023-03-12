@@ -75,7 +75,7 @@ header {
 
 /* Header Banner */
 .bannerimage {
-  height: 300px;
+  height: 400px;
   width: 100%;
   margin-top: -20px;
   background-size: cover;
@@ -98,4 +98,232 @@ header {
   position: relative;
   margin-bottom: 10px;
   height: 40px;
+}
+
+/* Work Section Containers*/
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-section {
+  display: flex;
+  flex-flow: space-around;
+  padding: 5px;
+  margin: 10px;
+}
+
+.aside-title {
+  width: 25%;
+  padding-right: 10px;
+  border-right: 2px solid var(--dark-blue);
+  text-align: right;
+  color: var(--dark-blue);
+}
+
+.section-content {
+  width: 65%;
+  padding-left: 10px;
+  margin: 5px 5px;
+}
+
+.page-container a {
+  text-decoration: none;
+
+}
+
+#about-me {
+  width: 60%;
+  margin: 5px;
+}
+
+/* Work Section Containers*/
+
+#work .section-content {
+  display: flex;
+  flex-flow: space-between;
+  flex-wrap: wrap;
+}
+
+
+.main-project {
+  width: 91%;
+  max-width: 1610px;
+  height: 300px;
+  margin: 5px;
+}
+
+.portfolio:hover {
+  opacity: 0.3;
+  box-shadow: 5px 5px var(--blue);
+  transition: 2s;
+}
+
+.sub-project {
+  width: 45%;
+  max-width: 800px;
+  height: 300px;
+  margin: 5px;
+}
+
+.project-title {
+  background-color: var(--red);
+  padding: 2px;
+  width: 180px;
+  position: relative;
+  margin-top: 230px;
+  height: 40px;
+  color: var(--blue);
+}
+
+.project-title h3 {
+  margin: 2px;
+  font-size: 14px;
+  height: 10px;
+  margin-bottom: 8px;
+}
+
+.project-title h4 {
+  margin: 2px;
+  font-size: 10px;
+  height: 10px;
+}
+
+#main-project1 {
+  background-image: url("../images/AdobeStock_243631347.jpeg");
+  /* Image By scoutori Free stock image @: https://stock.adobe.com/uk/images/ux-website-designer-drawing-wireframe-sketch-of-prototype-framework-layout-future-project-creative-user-experience-concept-website-template-designer-workspace/243631347*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+#sub-project1 {
+  background-image: url("../images/AdobeStock_266209869.jpeg");
+  /* Image By stokkete Free stock image @: https://stock.adobe.com/uk/search/free?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bfree_collection%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&k=computer&search_page=1&search_type=autosuggest&acp=1&aco=comp&get_facets=1&asset_id=266209869 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#sub-project2 {
+  background-image: url("../images/AdobeStock_209605626.jpeg");
+  /* Image By aksonsatFree stock image @: https://stock.adobe.com/uk/images/simple-website-html-code-with-colorful-tags-in-browser-view-on-dark-background-software-developer-programming-code-screen-of-code-for-overlay-background/209605626 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#sub-project3 {
+  background-image: url("../images/AdobeStock_292172238.jpeg");
+  /* Image  By tippapatt Free stock image @: https://stock.adobe.com/uk/search/free?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bfree_collection%5D=1&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&k=computer&search_type=usertyped&acp=&aco=computer&get_facets=1&asset_id=292172238*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#sub-project4 {
+  background-image: url("../images/AdobeStock_331227116.jpeg");
+  /* Image By LIGHTFIELD STUDIOS Free stock image @: https://stock.adobe.com/uk/images/cropped-view-of-designers-creative-user-experience-design-of-mobile-website-with-layouts-on-table-panoramic-shot/331227116*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* Contact Me Section */
+.contact-me-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me-nav ul {
+  list-style: none;
+}
+
+.contact-me-nav ul li {
+  display: inline;
+  margin-left: 45px;
+}
+
+.contact-me-nav a {
+  color: var(--dark-blue);
+}
+
+.contact-me-nav a:hover {
+  color: var(--blue);
+  transition: 2s;
+  font-weight: bold;
+}
+
+/* responsive items for screen size */
+@media screen and (max-width:950px) {
+
+  .main-project,
+  .sub-project {
+    width: 90%;
+  }
+
+  .logo h1 {
+    font-size: large;
+
+  }
+
+  .header nav {
+    font-size: medium;
+  }
+
+  .bannerimage-title {
+    font-size: medium;
+  }
+
+
+  #contact ul li {
+    display: block;
+    font-size: medium;
+
+  }
+
+}
+
+
+@media screen and (max-width:650px) {
+
+  .main-project,
+  .sub-project {
+    width: 90%;
+  }
+
+  .logo h1 {
+    display: none;
+
+  }
+
+  .header background-image {
+    display: none;
+  }
+
+  .header {
+    background-color: var(--red);
+  }
+
+  .header nav {
+    display: flex;
+    font-size: small;
+    justify-content: center;
+
+  }
+
+  .bannerimage-title {
+    font-size: medium;
+  }
+
+
+  #contact ul li {
+    display: block;
+    font-size: medium;
+
+  }
+
 }
